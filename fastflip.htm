@@ -1,153 +1,9 @@
 <!DOCTYPE html>
 <html lang='en'>
-<title>fastflip</title>hjvkl
 <head>
-<style>
-* {
-    box-sizing: border-box;
-    
-}
-
-body {
-    font-family: courier;
-    padding: 10px;
-    background: blue;
-}
-
-/* Header/Blog Title */
-.header {
-    border-radius: 30px 30px 30px 30px;
-    padding: 30px;
-    text-align: center;
-    text-shadow: 5px 5px 8px red;
-    background: tomato;
-}
-
-.header h1 {
-    font-size: 50px;
-    }
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: black;
-}
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: green;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-    background-color: grey;
-    color: red;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-    float: left;
-    width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: blue;
-    padding-left: 20px;
-}
-
-/* Fake image */
-.img {
-    width: 10%;
-    padding: 2px;
-}
-
-/* Add a card effect for articles */
-.card {
-    background-color: orange;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: tomato;
-    margin-top: 20px;
-}
-/*Button*/
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: green;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 10px;
-  padding: 14px;
-  width: 70px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
-}
-</style>
+  <title>fastflip</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="fastflip.css">
 </head>
 <body>
 
@@ -166,35 +22,41 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>BUY</h2>
-      <h5>make purchase before flipping</h5>
-      <div class="img" style="height:2px;"><img src='suit.jpg'>Suit</div>
-      <p>Some text..</p>
+      <h2><i>BUY</i></h2>
+      <h5><small>make purchase before flipping</small></h5>
+      <div class="img" style="height:2px;"><br><img src='suit.jpg'>Suit</div>
+      <p>Some text..
+        <ul>
+          <ol>Buy</ol>
+          <ol>Sell</ol>
+          <ol>Flip</ol>
+        </ul>
+      </p>
       
     </div>
     <div class="card">
-      <h2>FLIP</h2>
+      <h2><i>FLIP</i></h2>
       <h5>Add price tag to your purchased products</h5>
       <div class="img" style="height:200px;">Image</div>
-      <p>Some text..</p>
+      <p><em>Some text..</em></p>
       <p>some text..</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>Sign Up</h2>
+      <h2><i>Sign Up</i></h2>
       <div class="img" style="height:100px;">Image</div>
-      <p>some text..</p>
+      <p><strong>some text..</strong></p>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
+      <h3><i>Popular Post</i></h3>
       <div class="img"><p>Image</p></div>
       <div class="img"><p>Image</p></div>
       <div class="img"><p>Image</p></div>
     </div>
     <div class="card">
-      <h3>Follow Us</h3>
-      <p>Some text..</p>
+      <h3><b>Follow Us</b></h3>
+      <p><mark>Some text..</mark></p>
     </div>
   </div>
 </div>
